@@ -3,7 +3,6 @@
           Learn and adjust font-weight
           adjust blue boxes
           add alt text to images 
-          add visible captions to logos
           ajust margins on mobile projects
           add social links to footers
 
@@ -68,6 +67,7 @@ $accentblue: rgb(186, 232, 232);
       .navigation__menu--desktop button {
         background-color: $accentblue;
         border: solid 1px black;
+        box-shadow: 1px 1px;
         border-radius: 5px;
         color: black;
         padding: 10px;
@@ -106,7 +106,7 @@ Hero Image
       font-size: 30px;
       box-shadow: 2px 2px rgb(35, 35, 35);
       border-radius: 7px;
-      background-color: #98c1ff;
+      background-color: $accentblue;
       border: solid black 2px;
       color: black;
       margin-bottom: 100px;
@@ -134,11 +134,11 @@ Technical Skills
       z-index: 1;
     }
     .technicalSkills__blueBlock {
-      background-color: #98c1ff;
-      height: 2vh;
-      width: 40vw;
-      margin-top: 10px;
-      margin-left: 30%;
+      background-color: $accentblue;
+      height: 12px;
+      width: 199px;
+      margin-top: 18px;
+      margin-left: 42.2%;
       margin-bottom: 50px;
       z-index: 0;
     }
@@ -156,11 +156,17 @@ Technical Skills
 
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 15%;
+    margin-left: 10%;
     width: 80%;
     display: grid;
     gap: 30px;
     grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+
+    figure figcaption {
+      font-size: 15px;
+      margin-left: 8px;
+      color: $accentblue;
+    }
 
     .technicalSkills__gridImage {
       height: 70px;
@@ -200,12 +206,13 @@ MyProjects
     color: black;
   }
   .myProject__blueBlock {
-    background-color: #98c1ff;
-    height: 2vh;
-    width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
+    background-color: $accentblue;
+    height: 12px;
+    width: 199px;
+    margin-top: 18px;
+    margin-left: 42.4%;
     margin-bottom: 50px;
+    z-index: 0;
 
     .myProject__item {
       display: flex;
@@ -277,6 +284,7 @@ About Me
       width: 40%;
       text-align: start;
       margin-right: 50px;
+      margin-top: 60px;
 
       .aboutMe__header {
         color: black;
@@ -284,10 +292,8 @@ About Me
     }
 
     .aboutMe__image {
-      width: 30%;
       height: 300px;
       margin-left: 30px;
-      -o-object-fit: cover;
       object-fit: cover;
     }
   }
@@ -318,19 +324,19 @@ About Me
     height: 8vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
 
     .navigation__logo {
-      height: 50%;
+      height: 30px;
       width: 10%;
     }
     .navigation__name {
       width: 75%;
       margin-left: 5%;
       color: black;
+      margin-top: 0px;
     }
     .navigation__menu {
-      height: 50%;
+      height: 30px;
       width: 8%;
     }
     .navigation__menuContainer--desktop {
@@ -387,15 +393,12 @@ Technical Skills
       color: black;
     }
     .technicalSkills__blueBlock {
-      background-color: #98c1ff;
+      background-color: $accentblue;
       height: 2vh;
       width: 40vw;
-      margin-top: 10px;
-      margin-left: 30%;
+      margin-top: 18px;
+      margin-left: 29%;
       margin-bottom: 50px;
-    }
-    .techicalSkills__image {
-      width: 600px;
     }
 
     .technicalSkills__description--desktop {
@@ -405,11 +408,17 @@ Technical Skills
 
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 32%;
+    margin-left: 17%;
     display: grid;
     gap: 30px;
     grid-template-columns: 15% 15% 15%;
     grid-template-rows: 30% 30% 30%;
+
+    figure figcaption {
+      font-size: 13px;
+      margin-left: 2px;
+      color: $accentblue;
+    }
 
     .technicalSkills__gridImage {
       height: 35px;
@@ -431,11 +440,11 @@ My Project
       color: black;
     }
     .myProject__blueBlock {
-      background-color: #98c1ff;
+      background-color: $accentblue;
       height: 2vh;
       width: 40vw;
-      margin-top: 10px;
-      margin-left: 30%;
+      margin-top: 18px;
+      margin-left: 29%;
       margin-bottom: 50px;
     }
 
@@ -498,6 +507,7 @@ about me
 */
   .aboutMe {
     text-align: center;
+    padding-top: 20px;
 
     .aboutMe__description--desktop {
       display: none;
@@ -519,7 +529,7 @@ about me
   }
 
   footer {
-    background-color: #98c1ff;
+    background-color: #00327d;
     color: white;
     height: 100px;
     text-align: center;

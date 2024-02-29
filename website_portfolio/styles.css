@@ -1,3 +1,17 @@
+/*
+      TO DO 
+          Learn and adjust font-weight
+          adjust blue boxes
+          add alt text to images 
+          ajust margins on mobile projects
+          add social links to footers
+
+          add links 
+                code and preview for each projects 
+                build out burger menu 
+                add content
+                adjust crop on images 
+*/
 * {
   font-family: "Inter";
   color: rgb(139, 139, 139);
@@ -48,6 +62,7 @@
   .navigation .navigation__menuContainer--desktop .navigation__menu--desktop button {
     background-color: rgb(186, 232, 232);
     border: solid 1px black;
+    box-shadow: 1px 1px;
     border-radius: 5px;
     color: black;
     padding: 10px;
@@ -82,7 +97,7 @@
     font-size: 30px;
     box-shadow: 2px 2px rgb(35, 35, 35);
     border-radius: 7px;
-    background-color: #98c1ff;
+    background-color: rgb(186, 232, 232);
     border: solid black 2px;
     color: black;
     margin-bottom: 100px;
@@ -104,14 +119,16 @@
     margin-bottom: -30px;
     text-align: center;
     color: black;
+    z-index: 1;
   }
   .technicalSkills .technicalSkills__blueBlock {
-    background-color: #98c1ff;
-    height: 2vh;
-    width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
+    background-color: rgb(186, 232, 232);
+    height: 12px;
+    width: 199px;
+    margin-top: 18px;
+    margin-left: 42.2%;
     margin-bottom: 50px;
+    z-index: 0;
   }
   .technicalSkills__description--desktop {
     margin-left: 20%;
@@ -123,11 +140,16 @@
   }
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 15%;
+    margin-left: 10%;
     width: 80%;
     display: grid;
     gap: 30px;
     grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+  }
+  .technicalSkills__gridContainer figure figcaption {
+    font-size: 15px;
+    margin-left: 8px;
+    color: rgb(186, 232, 232);
   }
   .technicalSkills__gridContainer .technicalSkills__gridImage {
     height: 70px;
@@ -158,12 +180,13 @@
     color: black;
   }
   .myProject__blueBlock {
-    background-color: #98c1ff;
-    height: 2vh;
-    width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
+    background-color: rgb(186, 232, 232);
+    height: 12px;
+    width: 199px;
+    margin-top: 18px;
+    margin-left: 42.4%;
     margin-bottom: 50px;
+    z-index: 0;
   }
   .myProject__blueBlock .myProject__item {
     display: flex;
@@ -206,7 +229,7 @@
     margin-right: 20px;
   }
   .myProject__view .myProject__webLink {
-    height: 1.5vh;
+    height: 2.5vh;
     width: 3vh;
   }
   /* 
@@ -230,16 +253,16 @@
     width: 40%;
     text-align: start;
     margin-right: 50px;
+    margin-top: 60px;
   }
   .aboutMe .aboutMe__text .aboutMe__header {
     color: black;
   }
   .aboutMe .aboutMe__image {
-    width: 30%;
     height: 300px;
     margin-left: 30px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
   footer {
     background-color: #0b387c;
@@ -265,19 +288,19 @@
     height: 8vh;
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
   .navigation .navigation__logo {
-    height: 50%;
+    height: 30px;
     width: 10%;
   }
   .navigation .navigation__name {
     width: 75%;
     margin-left: 5%;
     color: black;
+    margin-top: 0px;
   }
   .navigation .navigation__menu {
-    height: 50%;
+    height: 30px;
     width: 8%;
   }
   .navigation .navigation__menuContainer--desktop {
@@ -329,26 +352,28 @@
     color: black;
   }
   .technicalSkills .technicalSkills__blueBlock {
-    background-color: #98c1ff;
+    background-color: rgb(186, 232, 232);
     height: 2vh;
     width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
+    margin-top: 18px;
+    margin-left: 29%;
     margin-bottom: 50px;
-  }
-  .technicalSkills .techicalSkills__image {
-    width: 600px;
   }
   .technicalSkills .technicalSkills__description--desktop {
     display: none;
   }
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 32%;
+    margin-left: 17%;
     display: grid;
     gap: 30px;
     grid-template-columns: 15% 15% 15%;
     grid-template-rows: 30% 30% 30%;
+  }
+  .technicalSkills__gridContainer figure figcaption {
+    font-size: 13px;
+    margin-left: 2px;
+    color: rgb(186, 232, 232);
   }
   .technicalSkills__gridContainer .technicalSkills__gridImage {
     height: 35px;
@@ -367,11 +392,11 @@
     color: black;
   }
   .myProject .myProject__blueBlock {
-    background-color: #98c1ff;
+    background-color: rgb(186, 232, 232);
     height: 2vh;
     width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
+    margin-top: 18px;
+    margin-left: 29%;
     margin-bottom: 50px;
   }
   .myProject .myProject__container--desktop {
@@ -427,6 +452,7 @@
   */
   .aboutMe {
     text-align: center;
+    padding-top: 20px;
   }
   .aboutMe .aboutMe__description--desktop {
     display: none;
@@ -445,7 +471,7 @@
     text-justify: inter-word;
   }
   footer {
-    background-color: #98c1ff;
+    background-color: #00327d;
     color: white;
     height: 100px;
     text-align: center;
