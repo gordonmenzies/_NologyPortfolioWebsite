@@ -1,20 +1,25 @@
 /*
       TO DO 
-          Learn and adjust font-weight
-          adjust blue boxes
-          add alt text to images 
-          ajust margins on mobile projects
+          adjust font-weight
           add social links to footers
 
           add links 
                 code and preview for each projects 
                 build out burger menu 
                 add content
-                adjust crop on images 
 */
 * {
   font-family: "Inter";
+  font-weight: 500;
   color: rgb(139, 139, 139);
+}
+
+.inter-hamish {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 /* 
@@ -265,11 +270,31 @@
        object-fit: cover;
   }
   footer {
-    background-color: #0b387c;
-    color: white;
+    background-color: #00327d;
     height: 100px;
     text-align: center;
-    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer__img {
+    height: 30px;
+    margin-left: 10px;
+  }
+  footer .footer__img--desktop {
+    display: none;
+  }
+  footer p {
+    width: 80%;
+    text-align: start;
+    margin-left: 8%;
+    color: white;
+  }
+  footer .footer__email {
+    display: none;
+  }
+  footer .footer__img--desktop {
+    display: none;
   }
 }
 /* 
@@ -287,7 +312,7 @@
   .navigation {
     height: 8vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .navigation .navigation__logo {
     height: 30px;
@@ -364,7 +389,7 @@
   }
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 17%;
+    margin-left: 25%;
     display: grid;
     gap: 30px;
     grid-template-columns: 15% 15% 15%;
@@ -405,8 +430,14 @@
   .myProject .myProject__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: auto;
+  }
+  .myProject .myProject__container .myProject__item {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .myProject .myProject__container .myProject__image {
     width: 95%;
@@ -425,6 +456,7 @@
   .myProject .myProject__container .myProject__description {
     margin-left: 2.5%;
     text-justify: auto;
+    margin-right: 4%;
   }
   .myProject .myProject__container .myProject__description--desktop {
     display: none;
@@ -453,6 +485,7 @@
   .aboutMe {
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 50px;
   }
   .aboutMe .aboutMe__description--desktop {
     display: none;
@@ -475,6 +508,37 @@
     color: white;
     height: 100px;
     text-align: center;
-    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  footer .footer__imgContainer {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer__img {
+    height: 30px;
+    margin-left: 10px;
+    background-color: rgb(186, 232, 232);
+    padding: 10px;
+    border-radius: 50%;
+  }
+  footer .footer__email {
+    margin-left: 14px;
+    margin-top: 0px;
+    width: 80%;
+    color: white;
+    padding-bottom: 10px;
+  }
+  footer .footer__img--desktop {
+    background-color: rgb(186, 232, 232);
+    padding: 14px;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: white;
+  }
+  footer .footer__email--desktop {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

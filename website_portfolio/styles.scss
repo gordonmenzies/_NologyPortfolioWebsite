@@ -1,23 +1,28 @@
 /*
       TO DO 
-          Learn and adjust font-weight
-          adjust blue boxes
-          add alt text to images 
-          ajust margins on mobile projects
+          adjust font-weight
           add social links to footers
 
           add links 
                 code and preview for each projects 
                 build out burger menu 
                 add content
-                adjust crop on images 
 */
 
 $accentblue: rgb(186, 232, 232);
 
 * {
   font-family: "Inter";
+  font-weight: 500;
   color: rgb(139, 139, 139);
+}
+
+.inter-hamish {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
 /* 
@@ -299,11 +304,36 @@ About Me
   }
 
   footer {
-    background-color: #0b387c;
-    color: white;
+    background-color: #00327d;
     height: 100px;
     text-align: center;
-    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    .footer__img {
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    .footer__img--desktop {
+      display: none;
+    }
+
+    p {
+      width: 80%;
+      text-align: start;
+      margin-left: 8%;
+      color: white;
+    }
+
+    .footer__email {
+      display: none;
+    }
+
+    .footer__img--desktop {
+      display: none;
+    }
   }
 }
 
@@ -323,7 +353,7 @@ About Me
   .navigation {
     height: 8vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     .navigation__logo {
       height: 30px;
@@ -408,7 +438,7 @@ Technical Skills
 
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 17%;
+    margin-left: 25%;
     display: grid;
     gap: 30px;
     grid-template-columns: 15% 15% 15%;
@@ -455,8 +485,15 @@ My Project
     .myProject__container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       margin: auto;
+
+      .myProject__item {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        text-align: justify;
+        text-justify: inter-word;
+      }
 
       .myProject__image {
         width: 95%;
@@ -475,6 +512,7 @@ My Project
       .myProject__description {
         margin-left: 2.5%;
         text-justify: auto;
+        margin-right: 4%;
       }
       .myProject__description--desktop {
         display: none;
@@ -508,6 +546,7 @@ about me
   .aboutMe {
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 50px;
 
     .aboutMe__description--desktop {
       display: none;
@@ -533,6 +572,42 @@ about me
     color: white;
     height: 100px;
     text-align: center;
-    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+    .footer__imgContainer {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer__img {
+      height: 30px;
+      margin-left: 10px;
+      background-color: $accentblue;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .footer__email {
+      margin-left: 14px;
+      margin-top: 0px;
+      width: 80%;
+      color: white;
+      padding-bottom: 10px;
+    }
+
+    .footer__img--desktop {
+      background-color: $accentblue;
+      padding: 14px;
+      margin-left: 10px;
+      border-radius: 50%;
+      color: white;
+    }
+
+    .footer__email--desktop {
+      display: none;
+    }
   }
 }
