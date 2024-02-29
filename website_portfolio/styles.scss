@@ -5,6 +5,52 @@ $accentblue: #98c1ff;
   color: rgb(139, 139, 139);
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .navigation__logo {
+      display: none;
+    }
+
+    .navigation__menu {
+      display: none;
+    }
+
+    .navigation__name {
+      font-size: 2vh;
+      margin-left: 10%;
+      width: 20%;
+      color: black;
+    }
+
+    .navigation__menuContainer--desktop {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 30%;
+      width: 40%;
+
+      .navigation__menu--desktop {
+        margin-left: 20px;
+      }
+
+      .navigation__menu--desktop h1 {
+        font-size: 1vh;
+      }
+
+      .navigation__menu--desktop button {
+        margin-left: 40px;
+        background-color: $accentblue;
+        border: solid 1px blue;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navigation {
     height: 8vh;
@@ -26,6 +72,10 @@ $accentblue: #98c1ff;
     .navigation__menu {
       height: 50%;
       width: 8%;
+    }
+
+    .navigation__menuContainer--desktop {
+      display: none;
     }
   }
 
