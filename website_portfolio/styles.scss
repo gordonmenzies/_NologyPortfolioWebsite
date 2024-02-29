@@ -1,3 +1,19 @@
+/*
+      TO DO 
+          Learn and adjust font-weight
+          adjust blue boxes
+          add alt text to images 
+          add visible captions to logos
+          ajust margins on mobile projects
+          add social links to footers
+
+          add links 
+                code and preview for each projects 
+                build out burger menu 
+                add content
+                adjust crop on images 
+*/
+
 $accentblue: rgb(186, 232, 232);
 
 * {
@@ -115,6 +131,7 @@ Technical Skills
       margin-bottom: -30px;
       text-align: center;
       color: black;
+      z-index: 1;
     }
     .technicalSkills__blueBlock {
       background-color: #98c1ff;
@@ -123,6 +140,7 @@ Technical Skills
       margin-top: 10px;
       margin-left: 30%;
       margin-bottom: 50px;
+      z-index: 0;
     }
   }
 
@@ -231,7 +249,7 @@ MyProjects
       margin-right: 20px;
     }
     .myProject__webLink {
-      height: 1.5vh;
+      height: 2.5vh;
       width: 3vh;
     }
   }
