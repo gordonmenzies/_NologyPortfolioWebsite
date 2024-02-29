@@ -1,9 +1,21 @@
-$accentblue: #98c1ff;
+$accentblue: rgb(186, 232, 232);
 
 * {
   font-family: "Inter";
   color: rgb(139, 139, 139);
 }
+
+/* 
+  
+***************************************************************
+***************************************************************
+***************************************************************
+  Desktop Sizing
+***************************************************************
+***************************************************************
+**************************************************************
+
+*/
 
 @media screen and (min-width: 768px) {
   .navigation {
@@ -19,8 +31,8 @@ $accentblue: #98c1ff;
       display: none;
     }
     .navigation__name {
-      font-size: 2vh;
-      margin-left: 10%;
+      font-size: 20px;
+      margin-left: 5%;
       width: 20%;
       color: black;
     }
@@ -28,56 +40,76 @@ $accentblue: #98c1ff;
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 30%;
+      margin-left: 50%;
       width: 40%;
 
       .navigation__menu--desktop {
         margin-left: 20px;
       }
       .navigation__menu--desktop h1 {
-        font-size: 1vh;
+        font-size: 16px;
       }
       .navigation__menu--desktop button {
-        background-color: #98c1ff;
+        background-color: $accentblue;
         border: solid 1px black;
         border-radius: 5px;
         color: black;
+        padding: 10px;
       }
     }
   }
+
+  /* 
+  
+***************************************************************
+Hero Image
+**************************************************************
+
+*/
 
   .heroImage__container {
     display: flex;
     flex-direction: column;
     background-color: rgb(204, 227, 235);
-    height: 60vh;
     align-items: center;
 
     .heroImage__greeting {
-      padding-top: 10%;
-      color: black;
+      margin-bottom: 0;
+      padding-top: 5%;
+      color: rgb(114, 114, 114);
     }
     .heroImage__softwareDeveloper {
-      margin-left: 10%;
-      font-size: 5vh;
-      margin-top: 3vh;
+      margin-top: 1px;
+      font-size: 50px;
       color: black;
       text-align: center;
     }
     .heroImage__button {
       width: 40%;
-      height: 8vh;
-      font-size: 2vh;
+      height: 50px;
+      font-size: 30px;
       box-shadow: 2px 2px rgb(35, 35, 35);
       border-radius: 7px;
       background-color: #98c1ff;
       border: solid black 2px;
       color: black;
+      margin-bottom: 100px;
     }
   }
 
+  /* 
+  
+***************************************************************
+Technical Skills
+**************************************************************
+
+*/
+
   .technicalSkills {
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
 
     .techicalSkills__title {
       margin-bottom: -30px;
@@ -94,22 +126,53 @@ $accentblue: #98c1ff;
     }
   }
 
-  .technicalSkills__description {
+  .technicalSkills__description--desktop {
     margin-left: 20%;
     margin-right: 20%;
+    text-align: center;
 
     .techicalSkills__image {
       display: none;
     }
   }
 
+  .technicalSkills__gridContainer {
+    margin-top: 80px;
+    margin-left: 15%;
+    width: 80%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+
+    .technicalSkills__gridImage {
+      height: 70px;
+      width: 70px;
+    }
+  }
+
+  /* 
+  
+***************************************************************
+MyProjects
+**************************************************************
+
+*/
+
   .myProject {
-    .myProject__container {
+    .myProject__container--desktop {
       display: flex;
 
       .myProject__description {
         display: none;
       }
+    }
+  }
+
+  .myProject__container {
+    display: flex;
+
+    .myProject__description {
+      display: none;
     }
   }
 
@@ -137,7 +200,9 @@ $accentblue: #98c1ff;
 
   .myProject__image {
     width: 90%;
+    height: 200px;
     margin-top: 0;
+    object-fit: cover;
   }
   .myProject__technology {
     margin-left: 2.5%;
@@ -158,6 +223,7 @@ $accentblue: #98c1ff;
     margin-left: 2.5%;
     display: flex;
     align-items: center;
+    align-content: center;
 
     .myProject__codeLink {
       height: 2vh;
@@ -169,6 +235,14 @@ $accentblue: #98c1ff;
       width: 3vh;
     }
   }
+
+  /* 
+  
+***************************************************************
+About Me
+**************************************************************
+
+*/
 
   .aboutMe {
     text-align: center;
@@ -209,144 +283,223 @@ $accentblue: #98c1ff;
   }
 }
 
+/* 
+  
+***************************************************************
+***************************************************************
+***************************************************************
+  MOBILE SIZING
+***************************************************************
+***************************************************************
+**************************************************************
+
+*/
+
 @media screen and (max-width: 768px) {
   .navigation {
     height: 8vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    .navigation__logo {
+      height: 50%;
+      width: 10%;
+    }
+    .navigation__name {
+      width: 75%;
+      margin-left: 5%;
+      color: black;
+    }
+    .navigation__menu {
+      height: 50%;
+      width: 8%;
+    }
+    .navigation__menuContainer--desktop {
+      display: none;
+    }
   }
-  .navigation .navigation__logo {
-    height: 50%;
-    width: 10%;
-  }
-  .navigation .navigation__name {
-    width: 75%;
-    margin-left: 5%;
-    color: black;
-  }
-  .navigation .navigation__menu {
-    height: 50%;
-    width: 8%;
-  }
-  .navigation .navigation__menuContainer--desktop {
-    display: none;
-  }
+
+  /* 
+  
+***************************************************************
+Hero Image
+**************************************************************
+
+*/
   .heroImage__container {
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(247, 250, 250);
     height: 100vh;
+
+    .heroImage__greeting {
+      margin-left: 10%;
+      padding-top: 30%;
+      color: black;
+    }
+    .heroImage__softwareDeveloper {
+      margin-left: 10%;
+      font-size: 7vh;
+      margin-top: 3vh;
+      color: black;
+    }
+    .heroImage__button {
+      margin-left: 10%;
+      width: 80%;
+      height: 8vh;
+      font-size: 3vh;
+      box-shadow: 5px 5px rgb(35, 35, 35);
+      border-radius: 5px;
+      background-color: #98c1ff;
+      border: solid black 2px;
+      color: black;
+    }
   }
-  .heroImage__container .heroImage__greeting {
-    margin-left: 10%;
-    padding-top: 30%;
-    color: black;
-  }
-  .heroImage__container .heroImage__softwareDeveloper {
-    margin-left: 10%;
-    font-size: 7vh;
-    margin-top: 3vh;
-    color: black;
-  }
-  .heroImage__container .heroImage__button {
-    margin-left: 10%;
-    width: 80%;
-    height: 8vh;
-    font-size: 3vh;
-    box-shadow: 5px 5px rgb(35, 35, 35);
-    border-radius: 5px;
-    background-color: #98c1ff;
-    border: solid black 2px;
-    color: black;
-  }
+
+  /* 
+  
+***************************************************************
+Technical Skills
+**************************************************************
+
+*/
   .technicalSkills {
-    height: 600px;
+    .techicalSkills__title {
+      margin-bottom: -30px;
+      text-align: center;
+      color: black;
+    }
+    .technicalSkills__blueBlock {
+      background-color: #98c1ff;
+      height: 2vh;
+      width: 40vw;
+      margin-top: 10px;
+      margin-left: 30%;
+      margin-bottom: 50px;
+    }
+    .techicalSkills__image {
+      width: 600px;
+    }
+
+    .technicalSkills__description--desktop {
+      display: none;
+    }
   }
-  .technicalSkills .techicalSkills__title {
-    margin-bottom: -30px;
-    text-align: center;
-    color: black;
+
+  .technicalSkills__gridContainer {
+    margin-top: 80px;
+    margin-left: 32%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 15% 15% 15%;
+    grid-template-rows: 30% 30% 30%;
+
+    .technicalSkills__gridImage {
+      height: 35px;
+      width: 35px;
+    }
   }
-  .technicalSkills .technicalSkills__blueBlock {
-    background-color: #98c1ff;
-    height: 2vh;
-    width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
-    margin-bottom: 50px;
-  }
-  .technicalSkills .techicalSkills__image {
-    width: 600px;
-  }
+
+  /* 
+  
+***************************************************************
+My Project
+**************************************************************
+
+*/
   .myProject {
-    margin-top: 360px;
+    .myProject__title {
+      text-align: center;
+      margin-bottom: -30px;
+      color: black;
+    }
+    .myProject__blueBlock {
+      background-color: #98c1ff;
+      height: 2vh;
+      width: 40vw;
+      margin-top: 10px;
+      margin-left: 30%;
+      margin-bottom: 50px;
+    }
+
+    .myProject__container--desktop {
+      display: none;
+    }
+
+    .myProject__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+
+      .myProject__image {
+        width: 95%;
+        margin: auto;
+      }
+      .myProject__technology {
+        margin-left: 2.5%;
+        margin-bottom: 0;
+        color: #98c1ff;
+      }
+      .myProject__projectTitle {
+        margin-bottom: 0;
+        margin-left: 2.5%;
+        color: rgb(0, 0, 0);
+      }
+      .myProject__description {
+        margin-left: 2.5%;
+        text-justify: auto;
+      }
+      .myProject__description--desktop {
+        display: none;
+      }
+
+      .myProject__view {
+        margin-left: 2.5%;
+        display: flex;
+        align-items: center;
+
+        .myProject__codeLink {
+          height: 4vh;
+          width: 8vh;
+          margin-right: 20px;
+        }
+        .myProject__webLink {
+          height: 6vh;
+          width: 8vh;
+        }
+      }
+    }
   }
-  .myProject .myProject__title {
-    text-align: center;
-    margin-bottom: -30px;
-    color: black;
-  }
-  .myProject .myProject__blueBlock {
-    background-color: #98c1ff;
-    height: 2vh;
-    width: 40vw;
-    margin-top: 10px;
-    margin-left: 30%;
-    margin-bottom: 50px;
-  }
-  .myProject .myProject__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-  }
-  .myProject .myProject__container .myProject__image {
-    width: 95%;
-    margin: auto;
-  }
-  .myProject .myProject__container .myProject__technology {
-    margin-left: 2.5%;
-    margin-bottom: 0;
-    color: #98c1ff;
-  }
-  .myProject .myProject__container .myProject__projectTitle {
-    margin-bottom: 0;
-    margin-left: 2.5%;
-    color: rgb(0, 0, 0);
-  }
-  .myProject .myProject__container .myProject__description {
-    margin-left: 2.5%;
-    text-justify: auto;
-  }
-  .myProject .myProject__container .myProject__view {
-    margin-left: 2.5%;
-    display: flex;
-    align-items: center;
-  }
-  .myProject .myProject__container .myProject__view .myProject__codeLink {
-    height: 4vh;
-    width: 8vh;
-    margin-right: 20px;
-  }
-  .myProject .myProject__container .myProject__view .myProject__webLink {
-    height: 4vh;
-    width: 8vh;
-  }
+
+  /* 
+  
+***************************************************************
+about me
+**************************************************************
+
+*/
   .aboutMe {
     text-align: center;
+
+    .aboutMe__description--desktop {
+      display: none;
+    }
+
+    .aboutMe__image {
+      width: 80%;
+      height: 600px;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .aboutMe__description {
+      margin-top: 2vh;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: justify;
+      text-justify: inter-word;
+    }
   }
-  .aboutMe .aboutMe__image {
-    width: 80%;
-    height: 600px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
-  .aboutMe .aboutMe__description {
-    margin-top: 2vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-    text-justify: inter-word;
-  }
+
   footer {
     background-color: #98c1ff;
     color: white;
