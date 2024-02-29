@@ -42,11 +42,43 @@ $accentblue: #98c1ff;
       }
 
       .navigation__menu--desktop button {
-        margin-left: 40px;
         background-color: $accentblue;
-        border: solid 1px blue;
+        border: solid 1px black;
         border-radius: 5px;
+        color: black;
       }
+    }
+  }
+
+  .heroImage__container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 227, 235);
+    height: 60vh;
+    align-items: center;
+
+    .heroImage__greeting {
+      padding-top: 10%;
+      color: black;
+    }
+
+    .heroImage__softwareDeveloper {
+      margin-left: 10%;
+      font-size: 5vh;
+      margin-top: 3vh;
+      color: black;
+      text-align: center;
+    }
+
+    .heroImage__button {
+      width: 40%;
+      height: 8vh;
+      font-size: 2vh;
+      box-shadow: 2px 2px rgb(35, 35, 35);
+      border-radius: 7px;
+      background-color: $accentblue;
+      border: solid black 2px;
+      color: black;
     }
   }
 }
