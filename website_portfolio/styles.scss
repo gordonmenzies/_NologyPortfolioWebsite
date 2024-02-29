@@ -18,14 +18,12 @@ $accentblue: #98c1ff;
     .navigation__menu {
       display: none;
     }
-
     .navigation__name {
       font-size: 2vh;
       margin-left: 10%;
       width: 20%;
       color: black;
     }
-
     .navigation__menuContainer--desktop {
       display: flex;
       flex-direction: row;
@@ -36,13 +34,11 @@ $accentblue: #98c1ff;
       .navigation__menu--desktop {
         margin-left: 20px;
       }
-
       .navigation__menu--desktop h1 {
         font-size: 1vh;
       }
-
       .navigation__menu--desktop button {
-        background-color: $accentblue;
+        background-color: #98c1ff;
         border: solid 1px black;
         border-radius: 5px;
         color: black;
@@ -61,7 +57,6 @@ $accentblue: #98c1ff;
       padding-top: 10%;
       color: black;
     }
-
     .heroImage__softwareDeveloper {
       margin-left: 10%;
       font-size: 5vh;
@@ -69,73 +64,13 @@ $accentblue: #98c1ff;
       color: black;
       text-align: center;
     }
-
     .heroImage__button {
       width: 40%;
       height: 8vh;
       font-size: 2vh;
       box-shadow: 2px 2px rgb(35, 35, 35);
       border-radius: 7px;
-      background-color: $accentblue;
-      border: solid black 2px;
-      color: black;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navigation {
-    height: 8vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .navigation__logo {
-      height: 50%;
-      width: 10%;
-    }
-
-    .navigation__name {
-      width: 75%;
-      margin-left: 5%;
-      color: black;
-    }
-
-    .navigation__menu {
-      height: 50%;
-      width: 8%;
-    }
-
-    .navigation__menuContainer--desktop {
-      display: none;
-    }
-  }
-
-  .heroImage__container {
-    background-color: rgb(161, 161, 161);
-    height: 100vh;
-
-    .heroImage__greeting {
-      margin-left: 10%;
-      padding-top: 30%;
-      color: black;
-    }
-
-    .heroImage__softwareDeveloper {
-      margin-left: 10%;
-      font-size: 7vh;
-      margin-top: 3vh;
-      color: black;
-    }
-
-    .heroImage__button {
-      margin-left: 10%;
-      width: 80%;
-      height: 8vh;
-      font-size: 3vh;
-      box-shadow: 5px 5px rgb(35, 35, 35);
-      border-radius: 5px;
-      background-color: $accentblue;
+      background-color: #98c1ff;
       border: solid black 2px;
       color: black;
     }
@@ -149,105 +84,271 @@ $accentblue: #98c1ff;
       text-align: center;
       color: black;
     }
-
     .technicalSkills__blueBlock {
-      background-color: $accentblue;
+      background-color: #98c1ff;
       height: 2vh;
       width: 40vw;
       margin-top: 10px;
       margin-left: 30%;
       margin-bottom: 50px;
-    }
-
-    .techicalSkills__image {
-      width: 600px;
     }
   }
+
+  .technicalSkills__description {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    .techicalSkills__image {
+      display: none;
+    }
+  }
+
   .myProject {
-    margin-top: 360px;
-
-    .myProject__title {
-      text-align: center;
-      margin-bottom: -30px;
-      color: black;
-    }
-
-    .myProject__blueBlock {
-      background-color: $accentblue;
-      height: 2vh;
-      width: 40vw;
-      margin-top: 10px;
-      margin-left: 30%;
-      margin-bottom: 50px;
-    }
-
     .myProject__container {
+      display: flex;
+
+      .myProject__description {
+        display: none;
+      }
+    }
+  }
+
+  .myProject .myProject__title {
+    text-align: center;
+    margin-bottom: -30px;
+    color: black;
+  }
+  .myProject__blueBlock {
+    background-color: #98c1ff;
+    height: 2vh;
+    width: 40vw;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+
+    .myProject__item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: auto;
+      height: 400px;
+    }
+  }
 
-      .myProject__image {
-        width: 95%;
-        margin: auto;
-      }
+  .myProject__image {
+    width: 90%;
+    margin-top: 0;
+  }
+  .myProject__technology {
+    margin-left: 2.5%;
+    margin-bottom: 0;
+    color: #98c1ff;
+  }
+  .myProject__projectTitle {
+    margin-bottom: 0;
+    margin-left: 2.5%;
+    color: rgb(0, 0, 0);
+  }
+  .myProject__description--desktop {
+    margin-left: 2.5%;
+    text-justify: auto;
+    margin-right: 10px;
+  }
+  .myProject__view {
+    margin-left: 2.5%;
+    display: flex;
+    align-items: center;
 
-      .myProject__technology {
-        margin-left: 2.5%;
-        margin-bottom: 0;
-        color: $accentblue;
-      }
-
-      .myProject__projectTitle {
-        margin-bottom: 0;
-        margin-left: 2.5%;
-        color: rgb(0, 0, 0);
-      }
-
-      .myProject__description {
-        margin-left: 2.5%;
-        text-justify: auto;
-      }
-
-      .myProject__view {
-        margin-left: 2.5%;
-        display: flex;
-        align-items: center;
-
-        .myProject__codeLink {
-          height: 4vh;
-          width: 8vh;
-          margin-right: 20px;
-        }
-
-        .myProject__webLink {
-          height: 4vh;
-          width: 8vh;
-        }
-      }
+    .myProject__codeLink {
+      height: 2vh;
+      width: 3vh;
+      margin-right: 20px;
+    }
+    .myProject__webLink {
+      height: 1.5vh;
+      width: 3vh;
     }
   }
 
   .aboutMe {
     text-align: center;
-
-    .aboutMe__image {
-      width: 80%;
-      height: 600px;
-      object-fit: cover;
-    }
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
 
     .aboutMe__description {
-      margin-top: 2vh;
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: justify;
-      text-justify: inter-word;
+      display: none;
+    }
+
+    .aboutMe__text {
+      width: 40%;
+      text-align: start;
+      margin-right: 50px;
+
+      .aboutMe__header {
+        color: black;
+      }
+    }
+
+    .aboutMe__image {
+      width: 30%;
+      height: 300px;
+      margin-left: 30px;
+      -o-object-fit: cover;
+      object-fit: cover;
     }
   }
 
   footer {
-    background-color: $accentblue;
+    background-color: #0b387c;
+    color: white;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navigation .navigation__logo {
+    height: 50%;
+    width: 10%;
+  }
+  .navigation .navigation__name {
+    width: 75%;
+    margin-left: 5%;
+    color: black;
+  }
+  .navigation .navigation__menu {
+    height: 50%;
+    width: 8%;
+  }
+  .navigation .navigation__menuContainer--desktop {
+    display: none;
+  }
+  .heroImage__container {
+    background-color: rgb(161, 161, 161);
+    height: 100vh;
+  }
+  .heroImage__container .heroImage__greeting {
+    margin-left: 10%;
+    padding-top: 30%;
+    color: black;
+  }
+  .heroImage__container .heroImage__softwareDeveloper {
+    margin-left: 10%;
+    font-size: 7vh;
+    margin-top: 3vh;
+    color: black;
+  }
+  .heroImage__container .heroImage__button {
+    margin-left: 10%;
+    width: 80%;
+    height: 8vh;
+    font-size: 3vh;
+    box-shadow: 5px 5px rgb(35, 35, 35);
+    border-radius: 5px;
+    background-color: #98c1ff;
+    border: solid black 2px;
+    color: black;
+  }
+  .technicalSkills {
+    height: 600px;
+  }
+  .technicalSkills .techicalSkills__title {
+    margin-bottom: -30px;
+    text-align: center;
+    color: black;
+  }
+  .technicalSkills .technicalSkills__blueBlock {
+    background-color: #98c1ff;
+    height: 2vh;
+    width: 40vw;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+  }
+  .technicalSkills .techicalSkills__image {
+    width: 600px;
+  }
+  .myProject {
+    margin-top: 360px;
+  }
+  .myProject .myProject__title {
+    text-align: center;
+    margin-bottom: -30px;
+    color: black;
+  }
+  .myProject .myProject__blueBlock {
+    background-color: #98c1ff;
+    height: 2vh;
+    width: 40vw;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+  }
+  .myProject .myProject__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .myProject .myProject__container .myProject__image {
+    width: 95%;
+    margin: auto;
+  }
+  .myProject .myProject__container .myProject__technology {
+    margin-left: 2.5%;
+    margin-bottom: 0;
+    color: #98c1ff;
+  }
+  .myProject .myProject__container .myProject__projectTitle {
+    margin-bottom: 0;
+    margin-left: 2.5%;
+    color: rgb(0, 0, 0);
+  }
+  .myProject .myProject__container .myProject__description {
+    margin-left: 2.5%;
+    text-justify: auto;
+  }
+  .myProject .myProject__container .myProject__view {
+    margin-left: 2.5%;
+    display: flex;
+    align-items: center;
+  }
+  .myProject .myProject__container .myProject__view .myProject__codeLink {
+    height: 4vh;
+    width: 8vh;
+    margin-right: 20px;
+  }
+  .myProject .myProject__container .myProject__view .myProject__webLink {
+    height: 4vh;
+    width: 8vh;
+  }
+  .aboutMe {
+    text-align: center;
+  }
+  .aboutMe .aboutMe__image {
+    width: 80%;
+    height: 600px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .aboutMe .aboutMe__description {
+    margin-top: 2vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  footer {
+    background-color: #98c1ff;
     color: white;
     height: 100px;
     text-align: center;
