@@ -18,7 +18,7 @@ $accentblue: rgb(186, 232, 232);
   color: rgb(139, 139, 139);
 }
 
-.inter-hamish {
+.inter-standard {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -80,7 +80,7 @@ $accentblue: rgb(186, 232, 232);
       }
 
       .navigation__menu--desktop button:hover {
-        box-shadow: 0px;
+        box-shadow: 0px 0px;
       }
     }
   }
@@ -107,19 +107,24 @@ Hero Image
     .heroImage__softwareDeveloper {
       margin-top: 1px;
       font-size: 50px;
+      font-weight: 900;
       color: black;
       text-align: center;
     }
     .heroImage__button {
       width: 40%;
       height: 50px;
-      font-size: 30px;
+      font-size: 20px;
       box-shadow: 2px 2px rgb(35, 35, 35);
       border-radius: 7px;
       background-color: $accentblue;
       border: solid black 2px;
       color: black;
       margin-bottom: 100px;
+    }
+
+    .heroImage__button:hover {
+      box-shadow: 1px 1px rgb(35, 35, 35);
     }
   }
 
@@ -172,9 +177,12 @@ Technical Skills
     gap: 30px;
     grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8%;
 
+    .technicalSkills__gridItem {
+      justify-content: center;
+    }
+
     figure figcaption {
       font-size: 15px;
-      margin-left: 8px;
       color: $accentblue;
     }
 
@@ -369,6 +377,7 @@ About Me
       width: 75%;
       margin-left: 5%;
       color: black;
+      font-weight: 900;
     }
     .navigation__menu {
       height: 30px;
@@ -393,13 +402,15 @@ Hero Image
     .heroImage__greeting {
       margin-left: 10%;
       padding-top: 30%;
-      color: black;
+      color: grey;
+      font-weight: 900;
     }
     .heroImage__softwareDeveloper {
       margin-left: 10%;
       font-size: 7vh;
       margin-top: 3vh;
       color: black;
+      font-weight: 900;
     }
     .heroImage__button {
       margin-left: 10%;
@@ -411,6 +422,11 @@ Hero Image
       background-color: #98c1ff;
       border: solid black 2px;
       color: black;
+      font-weight: 900;
+    }
+
+    .heroImage__button:hover {
+      box-shadow: 1px 1px rgb(35, 35, 35);
     }
   }
 
@@ -426,6 +442,7 @@ Technical Skills
       margin-bottom: -30px;
       text-align: center;
       color: black;
+      font-weight: 900;
     }
     .technicalSkills__blueBlock {
       background-color: $accentblue;
@@ -449,15 +466,24 @@ Technical Skills
     grid-template-columns: 15% 15% 15%;
     grid-template-rows: 30% 30% 30%;
 
-    figure figcaption {
+    .technicalSkills__gridItem {
+      justify-items: center;
+    }
+
+    .technicalSkills__gridItem {
+      justify-items: center;
+    }
+
+    .technicalSkills__gridItem p {
       font-size: 13px;
-      margin-left: 2px;
       color: $accentblue;
+      text-align: center;
     }
 
     .technicalSkills__gridImage {
       height: 35px;
       width: 35px;
+      margin-left: 10px;
     }
   }
 
@@ -473,6 +499,7 @@ My Project
       text-align: center;
       margin-bottom: -30px;
       color: black;
+      font-weight: 900;
     }
     .myProject__blueBlock {
       background-color: $accentblue;
@@ -513,6 +540,7 @@ My Project
         margin-bottom: 0;
         margin-left: 2.5%;
         color: rgb(0, 0, 0);
+        font-weight: 900;
       }
       .myProject__description {
         margin-left: 2.5%;
@@ -537,6 +565,11 @@ My Project
           height: 6vh;
           width: 8vh;
         }
+
+        h4 {
+          color: black;
+          font-weight: 900;
+        }
       }
     }
   }
@@ -553,6 +586,10 @@ about me
     padding-top: 20px;
     padding-bottom: 50px;
 
+    .aboutMe__title {
+      font-weight: 900;
+      color: black;
+    }
     .aboutMe__description--desktop {
       display: none;
     }
