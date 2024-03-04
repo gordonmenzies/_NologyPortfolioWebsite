@@ -1,3 +1,28 @@
+<!-- 
+          
+          Mobile
+          * Adjust color of hero image button to accent blue
+          
+          Desktop
+          * add links social media 
+          * add links code preview
+          * About Me Black 
+          * add motifs to image 
+          * Add links for Home About Projects 
+
+
+          * Add Bold Font 
+          * add example projects 
+          * host with github pages
+          * Add content 
+          * Make tecnical skills blue
+
+
+
+
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,10 +50,10 @@
         <h1>Home</h1>
       </div>
       <div class="navigation__menu--desktop">
-        <h1>About</h1>
+        <a href="#about"><h1>About</h1></a>
       </div>
       <div class="navigation__menu--desktop">
-        <h1>Projects</h1>
+        <a href="#Projects"><h1>Projects</h1></a>
       </div>
       <div class="navigation__menu--desktop">
         <button>Get In Touch</button>
@@ -133,26 +158,20 @@
      -->
 
 
-    <section class="myProject">
+    <a id="Projects"><section class="myProject"></a>
       <h1 class="myProject__title">My Projects</h1>
       <div class="myProject__blueBlock"></div>
       <div class="myProject__container">
         <div class="myProject__item">
           <img
             class="myProject__image"
-            src="./images/tales_from_the_loop.jpg"
+            src="./images/projectImages/Screenshot 2024-03-04 at 13.52.53.png"
           />
-          <h3 class="myProject__technology">Example</h3>
-          <h2 class="myProject__projectTitle">An Example Project</h2>
+          <h3 class="myProject__technology">React</h3>
+          <h2 class="myProject__projectTitle">A Simple Trivia Game</h2>
           <p class="myProject__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aut
+            A simple trivia game built through connecting to an open trivia API. This project is implemented
+            in React.
           </p>
                   <!-- Desktop Element -->
           <p class="myProject__description--desktop">
@@ -162,8 +181,8 @@
                   <!-- Desktop Element -->
 
           <div class="myProject__view">
-            <h4>Code</h4>
-            <img src="images/logo.png" class="myProject__codeLink" />
+            <a href="https://github.com/gordonmenzies/TriviaAppReactImplementation/tree/main/src"><h4>Code</h4></a>
+            <a href="https://github.com/gordonmenzies/TriviaAppReactImplementation/tree/main/src"><img src="images/logo.png" class="myProject__codeLink" /></a>
             <h4>Preview</h4>
             <img src="images/Eye.png" class="myProject__webLink" />
           </div>
@@ -335,7 +354,7 @@
 
 
     </section>
-    <section class="aboutMe">
+    <a id="about"><section class="aboutMe"></a>
       <div class="aboutMe__text">
         <h1 class="aboutMe__title">About Me</h1>
         <!-- Desktop Element -->
@@ -368,8 +387,8 @@
   <footer class="footer__container">
     <p class="footer__email--desktop">heymish96@gmail.com</p>
     <div class="footer__imgContainer">
-        <img class="footer__img"src="./images/logos/github.png"/>
-        <img class="footer__img" src="./images/logos/linkedin.png">
+        <a href="https://github.com/gordonmenzies"><img class="footer__img"src="./images/logos/github.png"/></a>
+        <a href="https://www.linkedin.com/in/hamish-lawson-509931135/"><img class="footer__img" src="./images/logos/linkedin.png"></a>
         <p class="footer__img--desktop">CV</p>
     </div>
         <p class="footer__email">heymish96@gmail.com</p>
