@@ -26,6 +26,10 @@ $accentblue: rgb(186, 232, 232);
   font-variation-settings: "slnt" 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 
   
 ***************************************************************
@@ -88,7 +92,7 @@ $accentblue: rgb(186, 232, 232);
   /* 
   
 ***************************************************************
-Hero Image
+Hero Image - Desktop Sizing
 **************************************************************
 
 */
@@ -96,7 +100,7 @@ Hero Image
   .heroImage__container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(204, 227, 235);
+    background-color: rgb(223, 223, 223);
     align-items: center;
 
     .heroImage__greetingContainer {
@@ -124,9 +128,9 @@ Hero Image
       text-align: center;
     }
     .heroImage__button {
-      width: 40%;
+      width: 25%;
       height: 50px;
-      font-size: 20px;
+      font-size: 15px;
       box-shadow: 2px 2px rgb(35, 35, 35);
       border-radius: 7px;
       background-color: $accentblue;
@@ -143,7 +147,7 @@ Hero Image
   /* 
   
 ***************************************************************
-Technical Skills
+Technical Skills - Desktop Sizing
 **************************************************************
 
 */
@@ -183,7 +187,7 @@ Technical Skills
 
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 10%;
+    margin-left: 12%;
     width: 80%;
     display: grid;
     gap: 30px;
@@ -214,7 +218,7 @@ Technical Skills
   /* 
   
 ***************************************************************
-MyProjects
+MyProjects - Desktop Sizing
 **************************************************************
 
 */
@@ -251,7 +255,7 @@ MyProjects
   .myProject__blueBlock {
     background-color: $accentblue;
     height: 12px;
-    width: 199px;
+    width: 170px;
     margin-top: 18px;
     margin-left: 42.4%;
     margin-bottom: 50px;
@@ -290,20 +294,20 @@ MyProjects
     align-content: center;
 
     .myProject__codeLink {
-      height: 2vh;
-      width: 3vh;
+      height: 20px;
+      width: 25px;
       margin-right: 20px;
     }
     .myProject__webLink {
-      height: 2.5vh;
-      width: 3vh;
+      height: 20px;
+      width: 20px;
     }
   }
 
   /* 
   
 ***************************************************************
-About Me
+About Me - Desktop Sizing
 **************************************************************
 
 */
@@ -325,7 +329,7 @@ About Me
       margin-right: 50px;
       margin-top: 60px;
 
-      .aboutMe__header {
+      .aboutMe__title {
         color: black;
       }
     }
@@ -338,7 +342,7 @@ About Me
   }
 
   footer {
-    background-color: #00327d;
+    background-color: #020048;
     height: 100px;
     text-align: center;
     align-items: center;
@@ -346,8 +350,11 @@ About Me
     flex-direction: row;
 
     .footer__img {
-      height: 30px;
+      height: 15px;
       margin-left: 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: $accentblue;
     }
 
     .footer__img--desktop {
@@ -412,7 +419,7 @@ About Me
   /* 
   
 ***************************************************************
-Hero Image
+Hero Image -   MOBILE SIZING
 **************************************************************
 
 */
@@ -465,7 +472,7 @@ Hero Image
   /* 
   
 ***************************************************************
-Technical Skills
+Technical Skills -   MOBILE SIZING
 **************************************************************
 
 */
@@ -492,7 +499,7 @@ Technical Skills
 
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 25%;
+    margin-left: 30%;
     display: grid;
     gap: 30px;
     grid-template-columns: 15% 15% 15%;
@@ -522,7 +529,7 @@ Technical Skills
   /* 
   
 ***************************************************************
-My Project
+My Project -  MOBILE SIZING
 **************************************************************
 
 */
@@ -609,7 +616,7 @@ My Project
   /* 
   
 ***************************************************************
-about me
+about me -  MOBILE SIZING
 **************************************************************
 
 */
@@ -642,7 +649,7 @@ about me
   }
 
   footer {
-    background-color: #00327d;
+    background-color: #020048;
     color: white;
     height: 100px;
     text-align: center;
