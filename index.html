@@ -1,0 +1,395 @@
+<!-- 
+          
+          Mobile
+          * Adjust color of hero image button to accent blue
+          
+          Desktop
+          * add links code preview
+          * About Me Black 
+          * add motifs to image 
+          * Add links for Home About Projects 
+
+
+          * Add Bold Font 
+          * add example projects 
+          * host with github pages
+          * Add content 
+          * Make tecnical skills blue
+
+
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-9,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header class="navigation">
+    <!-- mobile size nav menu -->
+    <img class="navigation__logo" src="./images/logo.png" />
+    <h1 class="navigation__name">Hamish Lawson</h1>
+    <img class="navigation__menu" src="./images/hamburger.png" />
+
+
+    <!--dekstop nav menu  -->
+    <div class="navigation__menuContainer--desktop">
+      <div class="navigation__menu--desktop">
+        <h1>Home</h1>
+      </div>
+      <div class="navigation__menu--desktop">
+        <a href="#about"><h1>About</h1></a>
+      </div>
+      <div class="navigation__menu--desktop">
+        <a href="#Projects"><h1>Projects</h1></a>
+      </div>
+      <div class="navigation__menu--desktop">
+        <button>Get In Touch</button>
+      </div>
+    </div>
+  </header>
+
+      <!-- 
+
+
+      Hero Image Section
+
+
+     -->
+
+  <body>
+    <div class="heroImage__container">
+      <div class="heroImage__greetingContainer">
+        <h2 class="heroImage__greeting">Hey! I'm Hamish</h2>
+        <img class="heroImage__greetingImg"src="./images/waving_hand.png">
+      </div >
+      <h3 class="heroImage__softwareDeveloper">
+        A Juniour Software Developer <br />based in the UK
+      </h3>
+      <button class="heroImage__button">Take a look at my work</button>
+    </div>
+
+    <!-- 
+
+
+      Technical Skills Section
+
+
+     -->
+
+
+    <section class="technicalSkills">
+      <h1 class="techicalSkills__title">Technical Skills</h1>
+      <div class="technicalSkills__blueBlock"></div>
+              <!-- Desktop Element -->
+      <p class="technicalSkills__description--desktop">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+              <!-- Desktop Element -->
+      <div class="technicalSkills__gridContainer">
+        <div class="technicalSkills__gridItem">
+        <img class="technicalSkills__gridImage" src="./images/logos/git.jpg" />
+        <p>Git</p>
+        </div>
+        <div class="technicalSkills__gridItem">
+        <img class="technicalSkills__gridImage" src="./images/logos/html.png" />
+        <p>HTML</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img
+          class="technicalSkills__gridImage"
+          src="./images/logos/javascript.png"
+        />
+        <p>javascript</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img class="technicalSkills__gridImage" src="./images/logos/css3.png" />
+        <p>CSS</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img class="technicalSkills__gridImage" src="./images/logos/Java.png" />
+        <p>Java</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img class="technicalSkills__gridImage" src="./images/logos/scss.png" />
+        <p>SCSS</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img
+          class="technicalSkills__gridImage"
+          src="./images/logos/springboot.PNG"
+        />
+        <p>Springboot</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img
+          class="technicalSkills__gridImage"
+          src="./images/logos/react.png"
+        />
+        <p>React</p>
+      </div>
+      <div class="technicalSkills__gridItem">
+        <img class="technicalSkills__gridImage" src="./images/logos/BEM.jpg" />
+        <p>BEM</p>
+      </div>
+    </div>
+    </section>
+
+
+      <!-- 
+
+
+      Project Section
+
+
+     -->
+
+
+    <a id="Projects"><section class="myProject"></a>
+      <h1 class="myProject__title">My Projects</h1>
+      <div class="myProject__blueBlock"></div>
+      <div class="myProject__container">
+        <div class="myProject__item">
+          <img
+            class="myProject__image"
+            src="./images/projectImages/Screenshot 2024-03-04 at 13.52.53.png"
+          />
+          <h3 class="myProject__technology">React</h3>
+          <h2 class="myProject__projectTitle">A Simple Trivia Game</h2>
+          <p class="myProject__description">
+            A simple trivia game built through connecting to an open trivia API. This project is implemented
+            in React.
+          </p>
+                  <!-- Desktop Element -->
+          <p class="myProject__description--desktop">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut
+          </p>
+                  <!-- Desktop Element -->
+
+          <div class="myProject__view">
+            <a href="https://github.com/gordonmenzies/TriviaAppReactImplementation/tree/main/src"><h4>Code</h4></a>
+            <a href="https://github.com/gordonmenzies/TriviaAppReactImplementation/tree/main/src"><img src="images/logo.png" class="myProject__codeLink" /></a>
+            <h4>Preview</h4>
+            <img src="images/Eye.png" class="myProject__webLink" />
+          </div>
+        </div>
+        <div class="myProject__item">
+          <img
+            class="myProject__image"
+            src="./images/tales_from_the_loop_2.jpg"
+          />
+          <h3 class="myProject__technology">Example</h3>
+          <h2 class="myProject__projectTitle">An Example Project</h2>
+          <p class="myProject__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aut
+          </p>
+                  <!-- Desktop Element -->
+          <p class="myProject__description--desktop">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut
+          </p>
+                  <!-- Desktop Element -->
+          <div class="myProject__view">
+            <h4>Code</h4>
+            <img src="images/logo.png" class="myProject__codeLink" />
+            <h4>Preview</h4>
+            <img src="images/Eye.png" class="myProject__webLink" />
+          </div>
+        </div>
+        <div class="myProject__item">
+          <img
+            class="myProject__image"
+            src="./images/tales_from_the_loop_3.jpg"
+          />
+          <h3 class="myProject__technology">Example</h3>
+          <h2 class="myProject__projectTitle">An Example Project</h2>
+          <p class="myProject__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aut
+          </p>
+          <p class="myProject__description--desktop">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <div class="myProject__view">
+            <h4>Code</h4>
+            <img src="images/logo.png" class="myProject__codeLink" />
+            <h4>Preview</h4>
+            <img src="images/Eye.png" class="myProject__webLink" />
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 
+
+
+      Project Section -- Desktop
+
+
+     -->
+
+
+      <div class="myProject__container--desktop">
+        <div class="myProject__item">
+        <img class="myProject__image" src="./images/tales_from_the_loop.jpg" />
+        <h3 class="myProject__technology">Example</h3>
+        <h2 class="myProject__projectTitle">An Example Project</h2>
+        <p class="myProject__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aut
+        </p>
+        <p class="myProject__description--desktop">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut
+        </p>
+        <div class="myProject__view">
+          <h4>Code</h4>
+          <img src="images/logo.png" class="myProject__codeLink" />
+          <h4>Preview</h4>
+          <img src="images/Eye.png" class="myProject__webLink" />
+        </div>
+      </div>
+      <div class="myProject__item--desktop">
+        <img
+          class="myProject__image"
+          src="./images/tales_from_the_loop_2.jpg"
+        />
+        <h3 class="myProject__technology">Example</h3>
+        <h2 class="myProject__projectTitle">An Example Project</h2>
+        <p class="myProject__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aut
+        </p>
+        <p class="myProject__description--desktop">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut
+        </p>
+        <div class="myProject__view">
+          <h4>Code</h4>
+          <img src="images/logo.png" class="myProject__codeLink" />
+          <h4>Preview</h4>
+          <img src="images/Eye.png" class="myProject__webLink" />
+        </div>
+      </div>
+
+
+
+      <div class="myProject__item">
+        <img
+          class="myProject__image"
+          src="./images/tales_from_the_loop_3.jpg"
+        />
+        <h3 class="myProject__technology">Example</h3>
+        <h2 class="myProject__projectTitle">An Example Project</h2>
+        <p class="myProject__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis autLorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aut
+        </p>
+        <p class="myProject__description--desktop">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt.
+        </p>
+        <div class="myProject__view">
+          <h4>Code</h4>
+          <img src="images/logo.png" class="myProject__codeLink" />
+          <h4>Preview</h4>
+          <img src="images/Eye.png" class="myProject__webLink" />
+        </div>
+      </div>
+  
+      
+      <!-- 
+
+
+      About Me Section
+
+
+     -->
+
+
+    </section>
+    <a id="about"><section class="aboutMe"></a>
+      <div class="aboutMe__text">
+        <h1 class="aboutMe__title">About Me</h1>
+        <!-- Desktop Element -->
+        <p class="aboutMe__description--desktop">
+        <!-- Desktop Element -->
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <img class="aboutMe__image" src="./images/East_Timor_4.jpg" />
+      <p class="aboutMe__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </section>
+
+
+      <!-- 
+
+
+      Footer
+
+
+     -->
+  </body>
+  <footer class="footer__container">
+    <p class="footer__email--desktop">heymish96@gmail.com</p>
+    <div class="footer__imgContainer">
+        <a href="https://github.com/gordonmenzies"><img class="footer__img"src="./images/logos/github.png"/></a>
+        <a href="https://www.linkedin.com/in/hamish-lawson-509931135/"><img class="footer__img" src="./images/logos/linkedin.png"></a>
+        <p class="footer__img--desktop">CV</p>
+    </div>
+        <p class="footer__email">heymish96@gmail.com</p>
+  </footer>
+</html>
