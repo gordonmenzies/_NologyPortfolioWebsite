@@ -499,10 +499,10 @@ Technical Skills -   MOBILE SIZING
 
   .technicalSkills__gridContainer {
     margin-top: 80px;
-    margin-left: 30%;
+    margin-left: 17%;
     display: grid;
     gap: 30px;
-    grid-template-columns: 15% 15% 15%;
+    grid-template-columns: 25% 25% 25%;
     grid-template-rows: 30% 30% 30%;
 
     .technicalSkills__gridItem {
@@ -517,6 +517,7 @@ Technical Skills -   MOBILE SIZING
       font-size: 13px;
       color: $accentblue;
       text-align: center;
+      margin-right: 70px;
     }
 
     .technicalSkills__gridImage {
