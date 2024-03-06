@@ -177,13 +177,9 @@ a {
   }
   .technicalSkills__gridContainer .technicalSkills__gridItem p {
     font-size: 13px;
-    color: rgb(186, 232, 232);
+    color: grey;
     text-align: center;
     margin-right: 20%;
-  }
-  .technicalSkills__gridContainer figure figcaption {
-    font-size: 15px;
-    color: rgb(186, 232, 232);
   }
   .technicalSkills__gridContainer .technicalSkills__gridImage {
     height: 70px;
@@ -454,9 +450,9 @@ a {
   }
   .technicalSkills__gridContainer .technicalSkills__gridItem p {
     font-size: 13px;
-    color: rgb(186, 232, 232);
+    color: grey;
     text-align: center;
-    margin-right: 70px;
+    margin-right: 10vw;
   }
   .technicalSkills__gridContainer .technicalSkills__gridImage {
     height: 35px;

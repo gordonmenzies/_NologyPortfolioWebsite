@@ -199,14 +199,9 @@ Technical Skills - Desktop Sizing
 
     .technicalSkills__gridItem p {
       font-size: 13px;
-      color: $accentblue;
+      color: grey;
       text-align: center;
       margin-right: 20%;
-    }
-
-    figure figcaption {
-      font-size: 15px;
-      color: $accentblue;
     }
 
     .technicalSkills__gridImage {
@@ -515,9 +510,9 @@ Technical Skills -   MOBILE SIZING
 
     .technicalSkills__gridItem p {
       font-size: 13px;
-      color: $accentblue;
+      color: grey;
       text-align: center;
-      margin-right: 70px;
+      margin-right: 10vw;
     }
 
     .technicalSkills__gridImage {
@@ -640,6 +635,7 @@ about me -  MOBILE SIZING
       -o-object-fit: cover;
       object-fit: cover;
     }
+
     .aboutMe__description {
       margin-top: 2vh;
       margin-left: 10%;
