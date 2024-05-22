@@ -232,13 +232,18 @@ a {
     justify-content: center;
     margin: auto;
     height: 400px;
+    align-items: center;
+  }
+
+  .myProject__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .myProject__image {
-    width: 90%;
+    width: 300px;
     height: 200px;
     margin-top: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .myProject__technology {
     margin-bottom: 0;
@@ -250,7 +255,8 @@ a {
   }
   .myProject__description--desktop {
     text-justify: auto;
-    margin-right: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .myProject__view {
     display: flex;
@@ -296,7 +302,7 @@ a {
     height: 300px;
     margin-left: 30px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   footer {
     background-color: #020048;
@@ -604,4 +610,4 @@ a {
   footer .footer__email--desktop {
     display: none;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
