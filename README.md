@@ -9,7 +9,7 @@ A portfolio site built with typescript utilising a React Front End and initilise
 # About 
 This portfolio website serves as a showcase of my projects and skills. It provides an overview of my technical expertise, as well as contact information for reaching out.
 
-#Features
+# Features
 * Responsive design that looks great on desktop and movile devices.
 * Showcase of projects with descriptions and links.
 * Social media links for reaching out.
