@@ -1,0 +1,85 @@
+@use "../../styles/variables.scss" as *;
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-color: #020048;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    .footer__img {
+      height: 15px;
+      margin-left: 10px;
+      padding: 5px;
+      border-radius: 50%;
+      background-color: $accentblue;
+    }
+
+    .footer__img--desktop {
+      display: none;
+    }
+
+    p {
+      width: 80%;
+      text-align: start;
+      margin-left: 8%;
+      color: white;
+    }
+
+    .footer__email {
+      display: none;
+    }
+
+    .footer__img--desktop {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    background-color: #020048;
+    color: white;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+    .footer__imgContainer {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer__img {
+      height: 30px;
+      margin-left: 10px;
+      background-color: $accentblue;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .footer__email {
+      margin-left: 14px;
+      margin-top: 0px;
+      width: 80%;
+      color: white;
+      padding-bottom: 10px;
+    }
+
+    .footer__img--desktop {
+      background-color: $accentblue;
+      padding: 14px;
+      margin-left: 10px;
+      border-radius: 50%;
+      color: white;
+    }
+
+    .footer__email--desktop {
+      display: none;
+    }
+  }
+}

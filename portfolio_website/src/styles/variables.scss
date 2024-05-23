@@ -1,0 +1,19 @@
+$accentblue: rgb(186, 232, 232);
+
+* {
+  font-family: "Inter";
+  font-weight: 500;
+  color: rgb(139, 139, 139);
+}
+
+.inter-standard {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+a {
+  text-decoration: none;
+}

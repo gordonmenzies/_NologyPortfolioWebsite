@@ -1,0 +1,63 @@
+@use "../../styles/variables.scss" as *;
+
+@media screen and (min-width: 768px) {
+  .aboutMe {
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .aboutMe__description {
+      display: none;
+    }
+
+    .aboutMe__text {
+      width: 40%;
+      text-align: start;
+      margin-right: 50px;
+      margin-top: 60px;
+
+      .aboutMe__title {
+        color: black;
+      }
+    }
+
+    .aboutMe__image {
+      height: 300px;
+      margin-left: 30px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutMe {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    .aboutMe__title {
+      font-weight: 900;
+      color: black;
+    }
+    .aboutMe__description--desktop {
+      display: none;
+    }
+
+    .aboutMe__image {
+      width: 80%;
+      height: 600px;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .aboutMe__description {
+      margin-top: 2vh;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  }
+}

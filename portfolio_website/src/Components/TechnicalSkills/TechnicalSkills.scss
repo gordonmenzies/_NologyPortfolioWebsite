@@ -1,0 +1,111 @@
+@use "../../styles/variables.scss" as *;
+
+@media screen and (min-width: 768px) {
+  .technicalSkills {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+
+    .techicalSkills__title {
+      margin-bottom: -30px;
+      margin-left: 43%;
+      color: black;
+      z-index: 1;
+      font-weight: 900;
+    }
+    .technicalSkills__blueBlock {
+      background-color: $accentblue;
+      height: 12px;
+      width: 199px;
+      margin-top: 18px;
+      margin-left: 42.2%;
+      margin-bottom: 50px;
+      z-index: 0;
+    }
+  }
+
+  .technicalSkills__description--desktop {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
+    .techicalSkills__image {
+      display: none;
+    }
+  }
+
+  .technicalSkills__gridContainer {
+    margin-top: 80px;
+    margin-left: 12%;
+    width: 80%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 8% 8% 8% 8% 8% 8% 8% 8% 8%;
+
+    .technicalSkills__gridItem {
+      justify-content: center;
+    }
+
+    .technicalSkills__gridItem p {
+      font-size: 13px;
+      color: grey;
+      text-align: center;
+      margin-right: 20%;
+    }
+
+    .technicalSkills__gridImage {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .technicalSkills {
+    .techicalSkills__title {
+      margin-bottom: -30px;
+      text-align: center;
+      color: black;
+      font-weight: 900;
+    }
+    .technicalSkills__blueBlock {
+      background-color: $accentblue;
+      height: 2vh;
+      width: 25vw;
+      margin-top: 18px;
+      margin-left: 37%;
+      margin-bottom: 50px;
+    }
+
+    .technicalSkills__description--desktop {
+      display: none;
+    }
+  }
+
+  .technicalSkills__gridContainer {
+    margin-top: 80px;
+    margin-left: 25%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 30% 30% 30%;
+
+    .technicalSkills__gridItem {
+      justify-items: center;
+    }
+
+    .technicalSkills__gridItem p {
+      font-size: 13px;
+      color: grey;
+      text-align: center;
+      margin-right: 40%;
+    }
+
+    .technicalSkills__gridImage {
+      height: 35px;
+      width: 35px;
+      margin-left: 10px;
+    }
+  }
+}

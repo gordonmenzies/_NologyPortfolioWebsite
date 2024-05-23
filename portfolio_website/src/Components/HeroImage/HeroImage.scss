@@ -1,0 +1,98 @@
+@use "../../styles/variables.scss" as *;
+
+@media screen and (min-width: 768px) {
+  .heroImage__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fafa;
+    align-items: center;
+
+    .heroImage__greetingContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .heroImage__greeting {
+        margin-bottom: 0;
+        padding-top: 5%;
+        color: rgb(114, 114, 114);
+      }
+
+      .heroImage__greetingImg {
+        margin-top: 35px;
+        height: 50px;
+      }
+    }
+
+    .heroImage__softwareDeveloper {
+      margin-top: 1px;
+      font-size: 50px;
+      font-weight: 900;
+      color: black;
+      text-align: center;
+    }
+    .heroImage__button {
+      width: 25%;
+      height: 50px;
+      font-size: 15px;
+      box-shadow: 2px 2px rgb(35, 35, 35);
+      border-radius: 7px;
+      background-color: $accentblue;
+      border: solid black 2px;
+      color: black;
+      margin-bottom: 100px;
+    }
+
+    .heroImage__button:hover {
+      box-shadow: 1px 1px rgb(35, 35, 35);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroImage__container {
+    background-color: rgb(247, 250, 250);
+    height: 100vh;
+
+    .heroImage__greetingContainer {
+      display: flex;
+
+      .heroImage__greeting {
+        margin-left: 10%;
+        padding-top: 30%;
+        color: grey;
+        font-weight: 900;
+        align-items: center;
+      }
+
+      .heroImage__greetingImg {
+        padding-top: 32%;
+        height: 40px;
+      }
+    }
+
+    .heroImage__softwareDeveloper {
+      margin-left: 10%;
+      font-size: 7vh;
+      margin-top: 3vh;
+      color: black;
+      font-weight: 900;
+    }
+    .heroImage__button {
+      margin-left: 10%;
+      width: 80%;
+      height: 8vh;
+      font-size: 3vh;
+      box-shadow: 5px 5px rgb(35, 35, 35);
+      border-radius: 5px;
+      background-color: $accentblue;
+      border: solid black 2px;
+      color: black;
+      font-weight: 900;
+    }
+
+    .heroImage__button:hover {
+      box-shadow: 1px 1px rgb(35, 35, 35);
+    }
+  }
+}

@@ -8,26 +8,6 @@
                 add content
 */
 
-$accentblue: rgb(186, 232, 232);
-
-* {
-  font-family: "Inter";
-  font-weight: 500;
-  color: rgb(139, 139, 139);
-}
-
-.inter-standard {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* 
   
 ***************************************************************
@@ -95,53 +75,6 @@ Hero Image - Desktop Sizing
 **************************************************************
 
 */
-
-  .heroImage__container {
-    display: flex;
-    flex-direction: column;
-    background-color: #f7fafa;
-    align-items: center;
-
-    .heroImage__greetingContainer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      .heroImage__greeting {
-        margin-bottom: 0;
-        padding-top: 5%;
-        color: rgb(114, 114, 114);
-      }
-
-      .heroImage__greetingImg {
-        margin-top: 35px;
-        height: 50px;
-      }
-    }
-
-    .heroImage__softwareDeveloper {
-      margin-top: 1px;
-      font-size: 50px;
-      font-weight: 900;
-      color: black;
-      text-align: center;
-    }
-    .heroImage__button {
-      width: 25%;
-      height: 50px;
-      font-size: 15px;
-      box-shadow: 2px 2px rgb(35, 35, 35);
-      border-radius: 7px;
-      background-color: $accentblue;
-      border: solid black 2px;
-      color: black;
-      margin-bottom: 100px;
-    }
-
-    .heroImage__button:hover {
-      box-shadow: 1px 1px rgb(35, 35, 35);
-    }
-  }
 
   /* 
   
